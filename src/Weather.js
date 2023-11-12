@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./Weather.css";
 
 export default function Weather() {
   const [city, setCity] = useState(``);
   const [weather, setWeather] = useState({});
   const [loaded, setLoaded] = useState(false);
 
-  function showWeather(response) {
+  function showWeatherResponce(response) {
     let city = response.data.name;
     let temperature = Math.round(response.data.main.temp);
     let description = response.data.weather[0].description;
@@ -21,7 +22,7 @@ export default function Weather() {
     event.preventDefault();
     let apiKey = "ca0db41e2e878c74a1dfc7ffece370d4";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(showWeather);
+    axios.get(apiUrl).then(showWeatherResponce);
   }
 
   function updateCity(event) {
@@ -39,8 +40,8 @@ export default function Weather() {
     return (
       <div className="Weather">
         {form}
+        <h1>{weather.city}</h1>
         <ul>
-          <li>City: {weather.city}</li>
           <li>Temperature: {weather.temperature}°C</li>
           <li>Description: {weather.description}</li>
           <li>Humidity: {weather.humidity}%</li>
