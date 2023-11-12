@@ -7,7 +7,13 @@ function App() {
     <div className="App">
       <h1>Weather App</h1>
       <Weather />
-      <footer></footer>
+      <footer>
+        This project is{" "}
+        <a href="https://github.com/TAffinity/weather-react" target="_blank">
+          open-sourced on GitHub
+        </a>{" "}
+        coded by Tatiana Bugulova
+      </footer>
     </div>
   );
 }
