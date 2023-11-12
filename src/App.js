@@ -9,7 +9,11 @@ function App() {
       <WeatherCity />
       <footer>
         This project is{" "}
-        <a href="https://github.com/TAffinity/weather-react" target="_blank">
+        <a
+          href="https://github.com/TAffinity/weather-react"
+          target="_blank"
+          rel="noreferrer"
+        >
           open-sourced on GitHub
         </a>{" "}
         coded by Tatiana Bugulova
