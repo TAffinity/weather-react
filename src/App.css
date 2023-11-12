@@ -1,10 +1,9 @@
 .App {
+  font-family: arial, sans-serif;
   max-width: 600px;
   margin: 30px auto;
-
-  font-family: arial, sans-serif;
-  border: 1px solid #dadde1;
   padding: 16px;
+  border: 1px solid #dadde1;
   border-radius: 4px;
   color: rgb(135, 135, 135);
 }
