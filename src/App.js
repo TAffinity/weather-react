@@ -1,12 +1,12 @@
 import React from "react";
-import Weather from "./Weather";
+import WeatherCity from "./WeatherCity";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <h1>Weather App</h1>
-      <Weather />
+      <WeatherCity />
       <footer>
         This project is{" "}
         <a href="https://github.com/TAffinity/weather-react" target="_blank">
